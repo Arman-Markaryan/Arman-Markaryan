@@ -6,62 +6,212 @@
 
 :root {
   --main-text: #fff;
-  --hover-color: rgb(214, 44, 44);
+  --hover-color: rgb(250, 100, 100);
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-section {
-  height: 102vh;
-}
-
-.Main-Page {
-  background: linear-gradient(to left, #000000e8, #424242);
-}
-
-.Logo {
-  font-family: monospace;
-  font-size: 3rem;
-  color: var(--main-text);
+.Landing-Page {
+  background: linear-gradient(to left, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
+  min-height: 100svh;
+  padding: 2em 2em 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  flex-wrap: wrap;
 }
 
 header {
-  padding: 25px 50px;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(to left, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
 }
 
 nav {
-  display: flex;
+  padding: 15px 25px;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  grid-template-columns: 1fr auto;
+  color: var(--main-text);
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 25px;
+}
+
+nav ul {
   flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 30px;
+  gap: 35px;
 }
 
 nav ul li {
   display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
 }
 
 nav ul li a {
+  font-size: 1.1rem;
+  font-weight: bold;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--main-text);
+  color: #fff;
+  outline-color: currentColor;
 }
 
-.HomeStyle {
-  color: var(--hover-color);
+.grid-row--3 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10rem;
+  margin-right: 5rem;
+}
+
+.TextColorMain {
+  color: #fff;
+}
+
+.grid-row--3 {
+  display: grid;
+  grid-template-rows: repeat(1, 21);
+  gap: 1.5rem;
+}
+
+.top-bottom-border::after,
+.top-bottom-border::before {
+  content: "";
+  display: block;
+  width: 125%;
+  height: 2px;
+  background-color: white;
+  margin-block: 0.5em;
+}
+
+.HT {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.8rem, 0.5rem + 0.5vw, 1.25rem);
+  width: fit-content;
+}
+
+.MN,
+.FED {
+  font-size: clamp(1rem, 0.5rem + 2.5vw, 4rem);
+  font-family: monospace;
+}
+
+:is(.MN, .FED) {
+  font-size: 4rem;
+  font-family: monospace;
+}
+.grid-row--3 {
+  display: grid;
+  gap: 1.5rem;
+  margin-left: 5rem;
+  margin-bottom: 5rem;
+}
+
+.button-like {
+  padding: 0.5em 1em;
+  min-width: 40px;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  outline: 2px solid #fff;
+  line-height: calc(21h - 1em);
 }
 
 .About-Me {
-  background-color: beige;
+  background-color: #fff;
+}
+
+.About-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+  gap: 1rem;
+  padding-bottom: 8rem;
+}
+
+.AboutTextDesign {
+  color: rgb(0, 23, 100);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.PersonalInfoTextDesign {
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.KnowMe {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.1rem;
+}
+
+.HelloColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.SkillsColumn{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.TextStylingAboutMe {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.DescAboutMeText,
+.Oppertunity {
+  color: rgb(80, 80, 80);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.DescAboutMeText {
+  max-width: 53ch;
+}
+
+.Oppertunity {
+  max-width: 50ch;
+}
+
+.HTMLDesign,
+.CSSDesign {
+  padding: 7px 15px;
+  text-decoration: none;
+  background-color: rgba(150, 150, 150, 0.329);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 5px;
+  border: 2px solid transparent;
+}
+
+.grid-column-1{
+  display: flex;
+  justify-content: space-evenly;
+
 }
 
 .Projects {
-  background-color: red;
+  background-color: rgb(231, 231, 231);
 }
 
-.Contact-Me {
-  background-color: green;
+footer {
+  padding: 1px;
+  background: linear-gradient(to right, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
 }
