@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,41 +9,84 @@
 </head>
 
 <body>
-  <!--This Content Houses The Header And Everything Inside-->
-  <div class="container">
-    <section class="Main-Page">
-      <header>
-        <nav>
-          <i>
-            <h1 class="Logo">AM</h1>
-          </i>
-          <ul>
-            <li><a href="#"><span class="HomeStyle">Home</span></a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-      <div class="ItsMeText">
-          <p>Hello There</p>
-          <h1>I am Arman Markaryan.<br>I am a Front-End Developer </h1>
+  <header>
+    <nav>
+      <svg width="90" height="80  ">
+        <use href="#logo" />
+      </svg>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Me</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--This Content Houses The Header And Everything Inside-->
+    <section class="Landing-Page">
+      <div class="grid-row--3">
+        <p class="HT TextColorMain top-bottom-border uppercase">
+          Hello There
+        </p>
+        <p class="MN TextColorMain">I am Arman Markaryan.</p>
+        <p class="FED TextColorMain">I am a Front-End Developer</p>
       </div>
 
+      <div class="grid-row--3">
+        <a href="#" class="button-like row-2">Latest Projects</a>
+        <a href="#" class="button-like row-3">More About Me</a>
+      </div>
     </section>
 
-<!--The About-Me section is related to me and me only-->
-    <section class="About-Me">
-    </section>
+    <!--This Will House Content About Me-->
+    <section class="AboutMeBG">
+      <div class="About-Container">
+        <h1 class="AboutTextDesign">ABOUT</h1>
+        <h3 class="PersonalInfoTextDesign">Personal Info</h3>
+        <p class="KnowMe">Get to know more about me</p>
+      </div>
 
-<!--The Projects section will hold the projects I've created-->
-    <section class="Projects">
-    </section>
+      <div class="grid-column-1">
+        <div class="HelloColumn">
+          <h2 class="TextStylingAboutMe">Hello!</h2>
+          <h3 class="DescAboutMeText">My name is Arman Markaryan and I'm a passionate Front-End Developer I enjoy using technology to build all sorts of products and designs I enjoy solving different types of problems using the power of technology.</h3>
+          <h3 class="Oppertunity">I would love to hear from you, Whether it is a job oppertunity or to just chat. Feel free to contact me.</h3>
+        </div>
+        <div class="SkillsColumn">
+          <h2 class="TextStylingAboutMe">Skills</h2>
+          <div class="ButtonStyling">
+          <button class="HTMLDesign">HTML</button>
+          <button class="CSSDesign">CSS</button>
+        </div>
+        </div>
+      </div>
 
-<!--This section will house my contact information-->
-    <section class="Contact-Me">
-    </section>
-  </div>
+    <!--This Will House Content Regarding My Projects-->
+    <section class="Projects">Projects</section>
+  </main>
+
+  <!--This Will House Content Regarding My Contact Information-->
+  <footer class="Contact-Information">Contact</footer>
+
+  <svg style="position:absolute;z-index:-1;width:0;height:0;visibility:hidden">
+    <symbol id="logo" viewBox="0 0 229 204">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: none;
+            stroke: #fff;
+            stroke-miterlimit: 10
+          }
+        </style>
+      </defs>
+      <path class="cls-1" d="m35 62-24 40 54 92h106l53-92-53-92h-47" />
+      <path class="cls-1" d="M122 204h54l53-91M185 15l-9-14H59L1 102l19 34" />
+      <path d="m99 45-26 86 21-1 5-19h10l-1 21 22-36 2-55s-22 4-33 4Zm11 54h-8l11-42Z" transform="translate(-11 -24)" style="fill:#fff" />
+      <path style="stroke-width:4px;fill:none;stroke:#fff;stroke-miterlimit:10" d="m84 145 57-96" />
+      <path d="m136 115 14-1-7 47 20-47 22-3s-8 73-8 88l-22 4 4-45-17 45h-14l4-45s-14 40-14 44l-20 1c0-6 8-29 15-50Z" transform="translate(-11 -24)" style="fill:#fff" />
+    </symbol>
+  </svg>
 
 </body>
 
