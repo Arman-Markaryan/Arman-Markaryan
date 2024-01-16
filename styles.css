@@ -122,7 +122,7 @@ nav ul li a {
   line-height: calc(21h - 1em);
 }
 
-.About-Me {
+.AboutMeBG {
   background-color: #fff;
 }
 
@@ -151,20 +151,17 @@ nav ul li a {
   font-size: 1.1rem;
 }
 
-.HelloColumn {
+.AboutMeColumnStyling {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   padding: 2rem;
 }
 
-.SkillsColumn{
+.ButtonStyling {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: fit-content;
-  gap: 1rem;
-  padding: 2rem;
+  flex-direction: row;
+  gap: 0.5rem;
 }
 
 .TextStylingAboutMe {
@@ -201,10 +198,12 @@ nav ul li a {
   border: 2px solid transparent;
 }
 
-.grid-column-1{
+.grid-column-1 {
   display: flex;
-  justify-content: space-evenly;
-
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5.5rem;
+  padding-bottom: 2rem;
 }
 
 .Projects {
