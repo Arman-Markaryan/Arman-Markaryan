@@ -147,7 +147,7 @@ nav ul li a {
 }
 
 .KnowMe {
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.1rem;
   font-weight: bold;
 }
@@ -159,7 +159,7 @@ nav ul li a {
   padding: 2rem;
 }
 
-.ButtonStyling{
+.ButtonStyling {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -199,7 +199,7 @@ nav ul li a {
   border: 2px solid transparent;
 }
 
-.grid-column-1{
+.grid-column-1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -222,23 +222,22 @@ footer {
   color: #fff;
 }
 
-.Contact-Styling{
+.Contact-Styling {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
 }
 
-.Say-Hello{
+.Say-Hello {
   font-size: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.Form-Desc{
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.Form-Desc {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.1rem;
 }
 
-.FirstNameInput::placeholder{
+.FirstNameInput::placeholder {
   color: green;
-
 }
