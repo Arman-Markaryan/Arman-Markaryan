@@ -147,8 +147,9 @@ nav ul li a {
 }
 
 .KnowMe {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .AboutMeColumnStyling {
@@ -183,7 +184,7 @@ nav ul li a {
 }
 
 .OutSideOfCode {
-  max-width: 52ch;
+  max-width: 55ch;
 }
 
 .HTMLDesign,
@@ -213,4 +214,26 @@ nav ul li a {
 footer {
   padding: 1px;
   background: linear-gradient(to right, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
+}
+
+.Form-Important {
+  text-align: center;
+  margin: 25px 0 20px 0 !important;
+  color: #fff;
+}
+
+.Contact-Styling{
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.Say-Hello{
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.Form-Desc{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1rem;
 }
