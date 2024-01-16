@@ -158,7 +158,7 @@ nav ul li a {
   padding: 2rem;
 }
 
-.ButtonStyling {
+.ButtonStyling{
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -169,7 +169,7 @@ nav ul li a {
 }
 
 .DescAboutMeText,
-.Oppertunity {
+.OutSideOfCode {
   color: rgb(80, 80, 80);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -182,8 +182,8 @@ nav ul li a {
   max-width: 53ch;
 }
 
-.Oppertunity {
-  max-width: 50ch;
+.OutSideOfCode {
+  max-width: 52ch;
 }
 
 .HTMLDesign,
@@ -198,7 +198,7 @@ nav ul li a {
   border: 2px solid transparent;
 }
 
-.grid-column-1 {
+.grid-column-1{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
