@@ -119,7 +119,6 @@ nav ul li a {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   outline: 2px solid #fff;
-  line-height: calc(21h - 1em);
 }
 
 .AboutMeBG {
@@ -216,11 +215,6 @@ footer {
   background: linear-gradient(to right, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
 }
 
-.Form-Important {
-  text-align: center;
-  margin: 25px 0 20px 0 !important;
-  color: #fff;
-}
 
 .Contact-Styling {
   color: #fff;
@@ -238,6 +232,84 @@ footer {
   font-size: 1.1rem;
 }
 
-.FirstNameInput::placeholder {
-  color: green;
+input {
+  width: 50%;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  background: none;
+  border-bottom: 2px solid #fff;
+  line-height: 2rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.wrapper {
+  width: min(50em, 100% - 5em);
+  margin-inline: auto;
+  color: #fff;
+}
+.wrapper .top-text {
+  text-align: center;
+  padding-block: 3em;
+}
+.wrapper .top-text h1 {
+  font-size: clamp(2rem, 1.619rem + 1.5238vw, 3rem);
+  margin-bottom: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper .top-text p {
+  font-size: clamp(1rem, 1.619rem + 1.5238vw, 1rem);
+  margin-bottom: 0.3em;
+  font-family: Arial, Helvetica, sans-serif;
+} 
+
+.wrapper form {
+  background: transparent;
+  padding-top: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  border-radius: 0.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  box-shadow: -10px -10px 50px 0px rgb(0, 0, 0, 0.8);
+  margin-bottom: 4rem;
+}
+
+.wrapper form .form-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.wrapper form .form-group:nth-last-child(1 of .form-group) {
+  grid-column: span 2;
+}
+
+#msg {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  resize: none;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
+  outline: 2px solid #fff;
+  color: #fff;
+}
+
+.wrapper form button {
+  outline: 2px solid #fff;
+  background-color: transparent;
+  padding-block: 0.6em;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  width: 8rem;
+  place-self: center;
+  grid-column: span 2;
 }
