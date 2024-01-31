@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: black;
 }
 
 :root {
@@ -74,7 +75,6 @@ nav ul li a {
 
 .grid-row--3 {
   display: grid;
-  grid-template-rows: repeat(1, 21);
   gap: 1.5rem;
 }
 
@@ -119,13 +119,14 @@ nav ul li a {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   outline: 2px solid #fff;
+  box-shadow: 0px 0px 20px 0px rgb(255 255 255 / 50%);
 }
 
 .AboutMeBG {
   background-color: #fff;
 }
 
-.About-Container {
+.CenteredHeaders {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +138,7 @@ nav ul li a {
 .AboutTextDesign {
   color: rgb(0, 23, 100);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.2rem;  
 }
 
 .PersonalInfoTextDesign {
@@ -207,7 +208,24 @@ nav ul li a {
 }
 
 .Projects {
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(241, 241, 241);
+}
+
+.WorksStyling {
+  color: rgb(0, 23, 100);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+}
+
+.LatestStyling {
+  font-size: 3rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.RecentProjects {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 footer {
@@ -224,11 +242,13 @@ footer {
 .Say-Hello {
   font-size: 3rem;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: #fff;
 }
 
 .Form-Desc {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 1.1rem;
+  color: white;
 }
 
 input {
@@ -248,17 +268,17 @@ input {
   margin-inline: auto;
   color: #fff;
 }
-.wrapper .top-text {
+.wrapper .CenteredHeaders{
   text-align: center;
   padding-block: 3em;
 }
-.wrapper .top-text h1 {
+.wrapper .CenteredHeaders h1{
   font-size: clamp(2rem, 1.619rem + 1.5238vw, 3rem);
   margin-bottom: 0.3em;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.wrapper .top-text p {
+.wrapper .CenteredHeaders p {
   font-size: clamp(1rem, 1.619rem + 1.5238vw, 1rem);
   margin-bottom: 0.3em;
   font-family: Arial, Helvetica, sans-serif;
