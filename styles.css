@@ -138,7 +138,8 @@ nav ul li a {
 .AboutTextDesign {
   color: rgb(0, 23, 100);
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.2rem;  
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .PersonalInfoTextDesign {
@@ -197,6 +198,7 @@ nav ul li a {
   font-weight: bold;
   letter-spacing: 5px;
   border: 2px solid transparent;
+  border-radius: 0.2rem;
 }
 
 .grid-column-1 {
@@ -215,6 +217,7 @@ nav ul li a {
   color: rgb(0, 23, 100);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .LatestStyling {
@@ -228,6 +231,32 @@ nav ul li a {
   font-weight: bold;
 }
 
+.projects-wrapper {
+  --width: 18rem;
+  width: min(100% - 2rem, calc(var(--width) * 3 + 2rem));
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--width), 1fr));
+  gap: 2rem;
+  padding-bottom: 2rem;
+  margin-inline: auto;
+}
+
+.project-box {
+  display: flex;
+  flex-direction: column;
+  min-height: 35rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 10px 2px rgb(0 10 26 / 41%);
+}
+
+.project-box img {
+  align-self: stretch;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
 footer {
   padding: 1px;
   background: linear-gradient(to right, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
@@ -237,6 +266,7 @@ footer {
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .Say-Hello {
@@ -268,11 +298,11 @@ input {
   margin-inline: auto;
   color: #fff;
 }
-.wrapper .CenteredHeaders{
+.wrapper .CenteredHeaders {
   text-align: center;
   padding-block: 3em;
 }
-.wrapper .CenteredHeaders h1{
+.wrapper .CenteredHeaders h1 {
   font-size: clamp(2rem, 1.619rem + 1.5238vw, 3rem);
   margin-bottom: 0.3em;
   font-family: Arial, Helvetica, sans-serif;
