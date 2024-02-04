@@ -25,6 +25,10 @@
   flex-wrap: wrap;
 }
 
+#Landing-Page-Redirect {
+  scroll-margin-top: 7rem;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -126,6 +130,10 @@ nav ul li a {
   background-color: #fff;
 }
 
+#AboutMeBGRedirect {
+  scroll-margin-top: 15rem;
+}
+
 .CenteredHeaders {
   display: flex;
   flex-direction: column;
@@ -211,6 +219,10 @@ nav ul li a {
 
 .Projects {
   background-color: rgb(241, 241, 241);
+}
+
+#ProjectsRedirect {
+  scroll-margin-top: 7rem;
 }
 
 .WorksStyling {
