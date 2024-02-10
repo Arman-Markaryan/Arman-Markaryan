@@ -4,21 +4,21 @@
 <head>
   <title>Arman Markaryan</title>
   <meta charset="UTF-8">
+  <meta name="description" content="Description of your website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="icons/Personal Logo.png" type="image/x-icon">
-
 </head>
 
 <body>
   <header>
     <nav>
-      <svg width="90" height="80  ">
+      <svg width="90" height="80">
         <use href="#logo" />
       </svg>
       <ul>
         <li><a href="#Landing-Page-Redirect">Home</a></li>
-        <li><a href="#AboutMeBGRedirect ">About Me</a></li>
+        <li><a href="#AboutMeBGRedirect">About Me</a></li>
         <li><a href="#ProjectsRedirect">Projects</a></li>
         <li><a href="#Contact-Information-Redirect">Contact Me</a></li>
       </ul>
@@ -46,9 +46,8 @@
     <section class="AboutMeBG" id="AboutMeBGRedirect">
       <div class="wrapper">
         <div class="CenteredHeaders">
-          <h3 class="AboutTextDesign">ABOUT</h1>
-            <h1 class="PersonalInfoTextDesign">Personal Info
-          </h3>
+          <h3 class="AboutTextDesign">ABOUT</h3>
+          <h1 class="PersonalInfoTextDesign">Personal Info</h1>
           <p class="KnowMe">Get to know more about me</p>
         </div>
       </div>
@@ -56,8 +55,8 @@
       <div class="grid-column-1">
         <div class="AboutMeColumnStyling">
           <h2 class="TextStylingAboutMe">Hello!</h2>
-          <h3 class="DescAboutMeText">My name is Arman Markaryan and I'm a passionate Front-End Developer I enjoy using technology to build all sorts of products and designs I enjoy solving different types of problems using the power of technology.</h3>
-          <h3 class="OutSideOfCode">When I am not developing or learning desing, I enjoy being around my family and friends or just being outside. I also enjoy teaching myself about cars as that is a passion of mine and when I am not doing any of that I'll be binge watching shows and movies.</h3>
+          <h3 class="DescAboutMeText">My name is Arman Markaryan and I'm a passionate Front-End Developer. I enjoy using technology to build all sorts of products and designs. I enjoy solving different types of problems using the power of technology.</h3>
+          <h3 class="OutSideOfCode">When I am not developing or learning design, I enjoy being around my family and friends or just being outside. I also enjoy teaching myself about cars as that is a passion of mine and when I am not doing any of that I'll be binge-watching shows and movies.</h3>
         </div>
 
         <div class="AboutMeColumnStyling">
@@ -68,6 +67,7 @@
             <button class="JSDesign">JavaScript</button>
           </div>
         </div>
+      </div>
     </section>
 
     <!--This Will House Content Regarding My Projects-->
@@ -81,7 +81,11 @@
 
         <div class="projects-wrapper">
           <div class="project-box">
-            <img class="img-size" src="icons/coming soon.png">
+            <div class="inside-img">
+              <h1 class="TextStyle">Calc</h1>
+              <p class="project-desc TextStyle">Calc is a web app I've created where users can make calculations</p>
+              <button class="project-button">See Live</button>
+            </div>
           </div>
           <div class="project-box">
             <img class="img-size" src="icons/coming soon.png">
@@ -102,9 +106,9 @@
         <div class="CenteredHeaders">
           <h3 class="Contact-Styling">Contact</h3>
           <h1 class="Say-Hello">Say Hello</h1>
-          <p class="Form-Desc ">Submit the form below so I can get back to you as soon as possible</p>
+          <p class="Form-Desc">Submit the form below so I can get back to you as soon as possible</p>
         </div>
-        <form class="main-contact-form" acceptCharset="utf-8" action="https://formsubmit.co/armanm000010@gmail.com" method="post">
+        <form class="main-contact-form" accept-charset="utf-8" action="https://formsubmit.co/armanm000010@gmail.com" method="post">
           <div class="form-group">
             <input id="fname" placeholder="First Name" type="text" required name="fname" />
           </div>
@@ -116,6 +120,7 @@
           </div>
           <button type="submit">Submit</button>
         </form>
+      </div>
     </footer>
 
     <svg style="position:absolute;z-index:-1;width:0;height:0;visibility:hidden">
@@ -137,6 +142,8 @@
       </symbol>
     </svg>
 
+  </main>
+  <script></script>
 </body>
 
 </html>
