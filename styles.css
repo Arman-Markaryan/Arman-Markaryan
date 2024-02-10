@@ -1,4 +1,4 @@
-  * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -14,8 +14,8 @@
 }
 
 .Landing-Page {
-  background: linear-gradient(to left, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
-  min-height: 100svh;
+  background: linear-gradient(to left,  hsl(222 92% 5%), hsl(0 0% 12%));
+  min-height: 100vh;
   padding: 2em 2em 4em;
   display: flex;
   justify-content: center;
@@ -24,14 +24,8 @@
   flex-wrap: wrap;
 }
 
-#Landing-Page-Redirect{
-  scroll-margin-top: 7rem;
-}
-
 header {
-  position: sticky;
-  top: 0;
-  background: linear-gradient(to left, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
+  background: linear-gradient(to left,  hsl(222 92% 5%), hsl(0 0% 12%)); 
 }
 
 nav {
@@ -79,6 +73,25 @@ li a:hover::after {
   transition: width 0.3s linear;
 }
 
+.button-like {
+  padding: 0.5em 1em;
+  min-width: 40px;
+  text-decoration: none;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  outline: 2px solid #fff;
+  box-shadow: 0px 0px 20px 0px rgb(255 255 255 / 50%);
+}
+
+.button-like.row-2 {
+  margin-top: 2rem;
+}
+
+.button-like.row-3 {
+  margin-top: 1rem;
+}
+
 .grid-row--3 {
   display: flex;
   flex-direction: column;
@@ -88,11 +101,6 @@ li a:hover::after {
 
 .TextColorMain {
   color: #fff;
-}
-
-.grid-row--3 {
-  display: grid;
-  gap: 1.5rem;
 }
 
 .top-bottom-border::after,
@@ -107,44 +115,19 @@ li a:hover::after {
 
 .HT {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: clamp(0.8rem, 0.5rem + 0.5vw, 1.25rem);
+  font-size: clamp(0.8rem, 0.5rem + 0.5vw, 1.25rem); 
   width: fit-content;
 }
 
 .MN,
 .FED {
-  font-size: clamp(1rem, 0.5rem + 2.5vw, 4rem);
-  font-family: monospace;
-}
-
-:is(.MN, .FED) {
   font-size: 4rem;
   font-family: monospace;
 }
+
 .grid-row--3 {
   display: grid;
   gap: 1.5rem;
-  margin-left: 5rem;
-  margin-bottom: 5rem;
-}
-
-.button-like {
-  padding: 0.5em 1em;
-  min-width: 40px;
-  text-decoration: none;
-  background-color: transparent;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  outline: 2px solid #fff;
-  box-shadow: 0px 0px 20px 0px rgb(255 255 255 / 50%);
-}
-
-.AboutMeBG {
-  background-color: #fff;
-}
-
-#AboutMeBGRedirect{
-  scroll-margin-top: 15rem;
 }
 
 .CenteredHeaders {
@@ -241,10 +224,6 @@ li a:hover::after {
   background-color: rgb(241, 241, 241);
 }
 
-#ProjectsRedirect{
-  scroll-margin-top: 7rem;
-}
-
 .WorksStyling {
   color: rgb(0, 23, 100);
   font-family: Arial, Helvetica, sans-serif;
@@ -289,12 +268,28 @@ li a:hover::after {
   border-radius: 0.5rem;
 }
 
-footer {
-  padding: 1px;
-  background: linear-gradient(to right, rgb(1, 8, 26), rgba(0, 0, 0, 0.884));
+.inside-img {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
+.TextStyle {
+  font-family: Arial;
+}
 
+.project-button{
+  text-transform: uppercase;
+  color: #fff;
+  background-color: blue;
+  padding: 0.5rem 8rem;
+}
+
+footer {
+  padding: 1px;
+  background: linear-gradient(to left,  hsl(222 92% 5%), hsl(0 0% 12%)); 
+}
 
 .Contact-Styling {
   color: #fff;
@@ -332,10 +327,12 @@ input {
   margin-inline: auto;
   color: #fff;
 }
+
 .wrapper .CenteredHeaders {
   text-align: center;
   padding-block: 3em;
 }
+
 .wrapper .CenteredHeaders h1 {
   font-size: clamp(2rem, 1.619rem + 1.5238vw, 3rem);
   margin-bottom: 0.3em;
@@ -367,6 +364,7 @@ input {
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 .wrapper form .form-group:nth-last-child(1 of .form-group) {
   grid-column: span 2;
 }
