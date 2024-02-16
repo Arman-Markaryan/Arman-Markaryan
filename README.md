@@ -17,4 +17,4 @@
 |---------------------------------------------------------------------------------------------------------|
 
 
-(Side Note: When looking click on "code" not preview - It won't look cool in preview mode).
+(Side Note: When viewing the "read me", click on "code" not preview - It won't look cool in preview mode).
