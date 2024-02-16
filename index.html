@@ -88,13 +88,13 @@
             </div>
           </div>
           <div class="project-box">
-            <img class="img-size" src="icons/coming soon.png">
+            <img class="img-size" src="icons/coming soon.png" alt="coming-soon-pics">
           </div>
           <div class="project-box">
-            <img class="img-size" src="icons/coming soon.png">
+            <img class="img-size" src="icons/coming soon.png" alt="coming-soon-pics">
           </div>
           <div class="project-box">
-            <img class="img-size" src="icons/coming soon.png">
+            <img class="img-size" src="icons/coming soon.png" alt="coming-soon-pics">
           </div>
         </div>
       </div>
@@ -143,7 +143,16 @@
     </svg>
 
   </main>
-  <script></script>
+  <script>
+    document.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 0) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 
 </html>
