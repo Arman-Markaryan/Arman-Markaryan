@@ -6,11 +6,13 @@
   <meta charset="UTF-8">
   <meta name="description" content="Description of your website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" href="main.js">
   <link rel="icon" href="icons/Personal Logo.png" type="image/x-icon">
+  
 </head>
 
 <body>
+  <div class="menu" id="menu">
   <header>
     <nav>
       <svg width="90" height="80">
@@ -24,6 +26,7 @@
       </ul>
     </nav>
   </header>
+</div>
 
   <main>
     <!--This Content Houses The Header And Everything Inside-->
@@ -141,18 +144,9 @@
         <path d="m136 115 14-1-7 47 20-47 22-3s-8 73-8 88l-22 4 4-45-17 45h-14l4-45s-14 40-14 44l-20 1c0-6 8-29 15-50Z" transform="translate(-11 -24)" style="fill:#fff" />
       </symbol>
     </svg>
-
+  
+    <script src="main.js" defer></script>
   </main>
-  <script>
-    document.addEventListener('scroll', () => {
-      const header = document.querySelector('header');
-      if (window.scrollY > 0) {
-        header.classList.add('scrolled');
-      } else {
-        header.classList.remove('scrolled');
-      }
-    });
-  </script>
 </body>
 
 </html>
