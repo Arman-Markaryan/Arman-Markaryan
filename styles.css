@@ -23,6 +23,10 @@
   flex-wrap: wrap;
 }
 
+.svg-logo {
+  z-index: 3;
+}
+
 header {
   background: linear-gradient(to left, hsl(222 92% 5%), hsl(0 0% 12%));
   display: flex;
@@ -184,7 +188,7 @@ li a:hover::after {
 
 .MN,
 .FED {
-  font-size: 4rem;
+  font-size: clamp(4em, 35px, 45px);
   font-family: monospace;
 }
 
