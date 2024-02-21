@@ -13,7 +13,7 @@
 }
 
 .Landing-Page {
-  background: linear-gradient(to left, hsl(222 92% 5%), hsl(0 0% 12%));
+  background-image: url(icons/Portfolio\ Background\ Img.png);
   min-height: 100vh;
   padding: 10em 2em 2em;
   display: flex;
@@ -23,12 +23,11 @@
   flex-wrap: wrap;
 }
 
-.svg-logo {
+.svg-logo-a {
   z-index: 3;
 }
 
 header {
-  background: linear-gradient(to left, hsl(222 92% 5%), hsl(0 0% 12%));
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -44,14 +43,14 @@ header.scrolled nav a {
 }
 
 header.scrolled {
-  background: linear-gradient(to left, hsl(222deg 92% 5% / 60%), hsl(0deg 0% 12% / 60%));
+  background-color: rgba(0, 0, 0, 0.253);
 }
 
 header nav a {
   transition: color 0.4s ease-in-out;
 }
 
-nav{
+nav {
   max-width: 100%;
   position: fixed;
   top: 0;
@@ -61,7 +60,7 @@ nav{
   justify-content: center;
   text-align: center;
   font-size: 3rem;
-  transition: 0.10s ease;
+  transition: 0.1s ease;
   z-index: 2;
 }
 
@@ -78,13 +77,13 @@ nav ul li {
 
 nav ul li a {
   color: #e8e8e8;
-  font-size: clamp(3rem,8vw,8rem);
-  font-family: IBM Plex Mono,monospace;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: IBM Plex Mono, monospace;
   text-transform: uppercase;
   display: block;
   text-decoration: none;
-  padding: clamp(0.25rem,0.5vw,1rem) 0rem;
-  cursor: pointer; 
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  cursor: pointer;
   font-weight: bold;
 }
 
@@ -153,9 +152,9 @@ li a:hover::after {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-image: radial-gradient(rgb(51 51 51) 9%,#020812 9%);
+  background-image: radial-gradient(rgb(51 51 51) 9%, #020812 13.5%);
   background-position: 0% 0%;
-  background-size: 12vmin 12vmin;
+  background-size: 12vmin 12.5vmin;
   position: absolute;
   top: 0;
 }
@@ -189,6 +188,15 @@ li a:hover::after {
 .MN,
 .FED {
   font-size: clamp(4em, 35px, 45px);
+  font-family: monospace;
+}
+
+.SD {
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #fff;
   font-family: monospace;
 }
 
@@ -313,7 +321,7 @@ li a:hover::after {
 }
 
 .projects-wrapper {
-  --width: 18rem;
+  --width: 15rem;
   width: min(100% - 2rem, calc(var(--width) * 3 + 2rem));
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(var(--width), 1fr));
@@ -351,7 +359,7 @@ li a:hover::after {
 
 footer {
   padding: 2em;
-  background: linear-gradient(to left, hsl(222 92% 5%), hsl(0 0% 12%));
+  background-image: url(icons/Portfolio\ Background\ Img.png);
 }
 
 .Contact-Styling {
@@ -443,7 +451,7 @@ input {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  box-shadow: 0px 0px 20px 20px rgb(0 10 26 / 41%);
+  box-shadow: 0px 0px 20px 4px rgb(59 0 54 / 41%);
   margin-bottom: 4rem;
 }
 
