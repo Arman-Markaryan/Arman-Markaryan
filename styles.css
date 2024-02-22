@@ -50,7 +50,7 @@ header nav a {
   transition: color 0.4s ease-in-out;
 }
 
-nav {
+nav{
   max-width: 100%;
   position: fixed;
   top: 0;
@@ -60,7 +60,7 @@ nav {
   justify-content: center;
   text-align: center;
   font-size: 3rem;
-  transition: 0.1s ease;
+  transition: 0.10s ease;
   z-index: 2;
 }
 
@@ -77,13 +77,13 @@ nav ul li {
 
 nav ul li a {
   color: #e8e8e8;
-  font-size: clamp(3rem, 8vw, 8rem);
-  font-family: IBM Plex Mono, monospace;
+  font-size: clamp(3rem,8vw,8rem);
+  font-family: IBM Plex Mono,monospace;
   text-transform: uppercase;
   display: block;
   text-decoration: none;
-  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-  cursor: pointer;
+  padding: clamp(0.25rem,0.5vw,1rem) 0rem;
+  cursor: pointer; 
   font-weight: bold;
 }
 
@@ -152,21 +152,25 @@ li a:hover::after {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-image: radial-gradient(rgb(51 51 51) 9%, #020812 13.5%);
+  background-image: radial-gradient(rgb(55 55 55) 9%,#181818 13.5%);
   background-position: 0% 0%;
   background-size: 12vmin 12.5vmin;
   position: absolute;
   top: 0;
 }
 
-.button-like {
+.button-like{
   padding: 0.5em 1em;
   text-decoration: none;
   background-color: transparent;
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   outline: 2px solid #fff;
+}
+
+.button-like:hover {
   box-shadow: 0px 0px 20px 0px rgb(255 255 255 / 50%);
+  transition: 0.4s;
 }
 
 .top-bottom-border::after,
@@ -216,12 +220,12 @@ li a:hover::after {
 }
 
 .AboutMeBG {
-  background-color: #fff;
+  background-color: #c9c9c9;
   padding: 2em;
 }
 
 .AboutTextDesign {
-  color: rgb(0, 23, 100);
+  color: rgb(142 55 124);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -300,12 +304,12 @@ li a:hover::after {
 }
 
 .Projects {
-  background-color: rgb(241, 241, 241);
+  background-color: rgb(189 189 189);
   padding: 2em;
 }
 
 .WorksStyling {
-  color: rgb(0, 23, 100);
+  color: rgb(142 55 124);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -337,6 +341,7 @@ li a:hover::after {
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0px 0px 10px 2px rgb(0 10 26 / 41%);
+  color: black;
 }
 
 .inside-img {
