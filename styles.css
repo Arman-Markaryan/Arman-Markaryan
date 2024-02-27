@@ -12,6 +12,8 @@
   display: none;
 }
 
+/* content below is for the first section in the website*/
+
 .Landing-Page {
   background-image: url(icons/Portfolio\ Background\ Img.png);
   min-height: 100vh;
@@ -35,6 +37,7 @@ header {
   transition: background-color 0.4s ease-in-out;
   top: 0;
   padding: 2em 3em 2em 1.5em;
+  z-index: 1000; /* Ensure the navigation bar is at a higher stacking level */
 }
 
 header.scrolled nav a {
@@ -50,7 +53,7 @@ header nav a {
   transition: color 0.4s ease-in-out;
 }
 
-nav{
+nav {
   max-width: 100%;
   position: fixed;
   top: 0;
@@ -60,7 +63,7 @@ nav{
   justify-content: center;
   text-align: center;
   font-size: 3rem;
-  transition: 0.10s ease;
+  transition: 0.1s ease;
   z-index: 2;
 }
 
@@ -77,13 +80,13 @@ nav ul li {
 
 nav ul li a {
   color: #e8e8e8;
-  font-size: clamp(3rem,8vw,8rem);
-  font-family: IBM Plex Mono,monospace;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-family: IBM Plex Mono, monospace;
   text-transform: uppercase;
   display: block;
   text-decoration: none;
-  padding: clamp(0.25rem,0.5vw,1rem) 0rem;
-  cursor: pointer; 
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  cursor: pointer;
   font-weight: bold;
 }
 
@@ -152,14 +155,14 @@ li a:hover::after {
   right: 0;
   height: 100vh;
   width: 100vw;
-  background-image: radial-gradient(rgb(55 55 55) 9%,#181818 13.5%);
+  background-image: radial-gradient(rgb(55 55 55) 9%, #181818 13.5%);
   background-position: 0% 0%;
   background-size: 12vmin 12.5vmin;
   position: absolute;
   top: 0;
 }
 
-.button-like{
+.button-like {
   padding: 0.5em 1em;
   text-decoration: none;
   background-color: transparent;
@@ -219,8 +222,10 @@ li a:hover::after {
   color: #000;
 }
 
+/* content below is for the section that's about me */
+
 .AboutMeBG {
-  background-color: #c9c9c9;
+  background-color: #e1e1e1;
   padding: 2em;
 }
 
@@ -259,7 +264,7 @@ li a:hover::after {
 
 .DescAboutMeText,
 .OutSideOfCode {
-  color: rgb(80, 80, 80);
+  color: rgb(0, 0, 0);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -303,64 +308,66 @@ li a:hover::after {
   padding-bottom: 2rem;
 }
 
-.Projects {
-  background-color: rgb(189 189 189);
+/* Sections for styling for project portion of my website*/
+
+.portfolio-projects {
   padding: 2em;
+  background-color: #cbcbcb;
 }
 
-.WorksStyling {
+.personal-info-text-design {
   color: rgb(142 55 124);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   text-transform: uppercase;
 }
 
-.LatestStyling {
-  font-size: 3rem;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
 }
 
-.RecentProjects {
+.work {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.work img {
+  border-radius: 10px;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  min-height: 100%;
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #0f0f11);
+  border-radius: 10px;
+  position: absolute; /* Position relative to the parent .work */
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  gap: 1em;
+}
+
+.project-styling {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
 
-.projects-wrapper {
-  --width: 15rem;
-  width: min(100% - 2rem, calc(var(--width) * 3 + 2rem));
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(var(--width), 1fr));
-  gap: 2rem;
-  padding-bottom: 2rem;
-  margin: 0 auto;
-}
-
-.project-box {
-  display: flex;
-  flex-direction: column;
-  min-height: 35rem;
-  background-color: white;
-  border-radius: 0.5rem;
-  box-shadow: 0px 0px 10px 2px rgb(0 10 26 / 41%);
-  color: black;
-}
-
-.inside-img {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.text-style {
-  font-family: Arial;
-}
-
-.project-button {
-  text-transform: uppercase;
-  color: #fff;
-  background-color: blue;
-  padding: 0.5rem 2rem; /* Reduced padding for button */
-}
+/* Section houses content for footer*/
 
 footer {
   padding: 2em;
@@ -393,7 +400,6 @@ form {
   border-radius: 0.8rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
   box-shadow: 0px 0px 20px 20px rgb(0 10 26 / 41%);
 }
 
@@ -495,6 +501,8 @@ input {
   place-self: center;
   grid-column: span 2;
 }
+
+/* Content below is for mobile sizing*/
 
 @media only screen and (max-width: 768px) {
   header {
