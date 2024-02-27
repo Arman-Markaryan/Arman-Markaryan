@@ -6,9 +6,9 @@
   <meta charset="UTF-8">
   <meta name="description" content="Description of your website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css" href="main.js">
+  <link rel="stylesheet" href="styles.css"> <!-- Corrected -->
+  <script src="main.js" defer></script> <!-- Corrected -->
   <link rel="icon" href="icons/Personal Logo.png" type="image/x-icon">
-
 </head>
 
 <body>
@@ -82,34 +82,42 @@
     </section>
 
     <!--This Will House Content Regarding My Projects-->
-    <section class="Projects" id="ProjectsRedirect">
-      <div class="wrapper">
-        <div class="CenteredHeaders">
-          <h3 class="WorksStyling">Works</h3>
-          <h1 class="LatestStyling">Latest Projects</h1>
-          <p class="RecentProjects">Here you can find some of the projects that I created recently</p>
+    <div class="portfolio-projects">
+      <div class="container">
+        <div class="wrapper">
+          <div class="CenteredHeaders">
+            <h3 class="personal-info-text-design">My Work</h3>
+            <h1 class="mywork">Find my work </h1>
+          </div>
         </div>
-
-        <div class="projects-wrapper">
-          <div class="project-box">
-            <div class="inside-img">
-              <h1 class="TextStyle">Calc</h1>
-              <p class="project-desc TextStyle">Calc is a web app I've created where users can make calculations</p>
-              <button class="project-button">See Live</button>
+        <div class="work-list">
+          <div class="work">
+            <img src="icons/Iphone Calc Img.jpg" alt="Calculator-img"> 
+            <div class="layer">
+              <h3 class="project-styling">Calculator App</h3>
+              <p class="project-styling">Experience the convenience of our user-friendly calculator app</p>
+              <a href="#"></a>
             </div>
           </div>
-          <div class="project-box">
-            <img class="img-size" src="icons/coming soon.png" alt="coming-soon-pics">
+          <div class="work">
+            <img src="icons/ToDo List.jpg" alt="todo-list-img">
+            <div class="layer">
+              <h3 class="project-styling">ToDo List</h3>
+              <p class="project-styling">Simple and easy-to-use ToDo List to always stay on top of your tasks.</p>
+              <a href="#"></a>
+            </div>
           </div>
-          <div class="project-box">
-            <img class="img-size" src="icons/coming soon.png" alt="coming-soon-pics">
-          </div>
-          <div class="project-box">
-            <img class="img-size" src="icons/coming soon.png" alt="coming-soon-pics">
+          <div class="work">
+            <img src="icons/Coming Soon.jpg" alt="coming-soon">
+            <div class="layer">
+              <h3 class="project-styling">Website Clone</h3>
+              <p class="project-styling">Example Text</p>
+              <a href="#"></a>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!--This Will House Content Regarding My Contact Information-->
     <footer class="Contact-Information" id="Contact-Information-Redirect">
