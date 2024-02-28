@@ -6,8 +6,8 @@
   <meta charset="UTF-8">
   <meta name="description" content="Description of your website">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css"> <!-- Corrected -->
-  <script src="main.js" defer></script> <!-- Corrected -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
   <link rel="icon" href="icons/Personal Logo.png" type="image/x-icon">
 </head>
 
@@ -21,7 +21,7 @@
       </a>
       <nav class="ham-menu">
         <ul class="ul-2">
-          <div class=".grid-row--3">
+          <div class="grid-row--3">
             <li><a href="#Landing-Page-Redirect">Home</a></li>
             <li><a href="#AboutMeBGRedirect">Who Am I?</a></li>
             <li><a href="#ProjectsRedirect">Projects</a></li>
@@ -82,25 +82,28 @@
     </section>
 
     <!--This Will House Content Regarding My Projects-->
-    <div class="portfolio-projects">
+    <section>
+    <div class="portfolio-projects" id="ProjectsRedirect">
       <div class="container">
         <div class="wrapper">
           <div class="CenteredHeaders">
             <h3 class="personal-info-text-design">My Work</h3>
-            <h1 class="mywork">Find my work </h1>
+            <h1 class="mywork">Latest Projects</h1>
+            <p class="recent-projects">Here you can find projects I recently created</p>
           </div>
         </div>
         <div class="work-list">
           <div class="work">
-            <img src="icons/Iphone Calc Img.jpg" alt="Calculator-img"> 
+            <img src="https://raw.githubusercontent.com/Arman-Markaryan/Portfolio-Img-Hosting/main/icons/Iphone%20Calc%20Img.jpg" alt="Calculator-img"> 
             <div class="layer">
-              <h3 class="project-styling">Calculator App</h3>
+              <h3 class="project-styling">Calc</h3>
               <p class="project-styling">Experience the convenience of our user-friendly calculator app</p>
+              <a href="#" class="button-like">Calc</a>
               <a href="#"></a>
             </div>
           </div>
           <div class="work">
-            <img src="icons/ToDo List.jpg" alt="todo-list-img">
+            <img src="" alt="todo-list-img">
             <div class="layer">
               <h3 class="project-styling">ToDo List</h3>
               <p class="project-styling">Simple and easy-to-use ToDo List to always stay on top of your tasks.</p>
@@ -108,7 +111,7 @@
             </div>
           </div>
           <div class="work">
-            <img src="icons/Coming Soon.jpg" alt="coming-soon">
+            <img src="" alt="coming-soon">
             <div class="layer">
               <h3 class="project-styling">Website Clone</h3>
               <p class="project-styling">Example Text</p>
@@ -118,6 +121,7 @@
         </div>
       </div>
     </div>
+    </section>
 
     <!--This Will House Content Regarding My Contact Information-->
     <footer class="Contact-Information" id="Contact-Information-Redirect">
@@ -135,7 +139,7 @@
             <input id="lname" placeholder="Last Name" type="text" required name="lname" />
           </div>
           <div class="form-group">
-            <textarea id="msg" required="" style="height: 115px; width: 737px;" placeholder="Type your message here..."></textarea>
+            <textarea id="msg" required="" style="height: 115px; width: 100%;" placeholder="Type your message here..."></textarea>
           </div>
           <button type="submit">Submit</button>
         </form>
