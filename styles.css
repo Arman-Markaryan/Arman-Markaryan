@@ -15,7 +15,8 @@
 /* content below is for the first section in the website*/
 
 .Landing-Page {
-  background-image: url(icons/Portfolio\ Background\ Img.png);
+  background: url(https://raw.githubusercontent.com/Arman-Markaryan/Portfolio-Img-Hosting/main/icons/Landing-Page%20Background%20Img.png);
+  background-size: cover;
   min-height: 100vh;
   padding: 10em 2em 2em;
   display: flex;
@@ -36,7 +37,7 @@ header {
   width: 100vw;
   transition: background-color 0.4s ease-in-out;
   top: 0;
-  padding: 2em 3em 2em 1.5em;
+  padding: 1em 3em 1em 1.5em;
   z-index: 1000; /* Ensure the navigation bar is at a higher stacking level */
 }
 
@@ -249,7 +250,6 @@ li a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
 }
 
 .ButtonStyling {
@@ -394,15 +394,6 @@ footer {
   font-weight: bold;
 }
 
-form {
-  background: transparent;
-  padding: 2rem;
-  border-radius: 0.8rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  box-shadow: 0px 0px 20px 20px rgb(0 10 26 / 41%);
-}
-
 .form-group {
   display: flex;
   flex-direction: row;
@@ -453,7 +444,6 @@ input {
 }
 
 .wrapper form {
-  background: transparent;
   padding-top: 2rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -503,6 +493,16 @@ input {
 }
 
 /* Content below is for mobile sizing*/
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .MN,
+  .FED {
+  font-size: 45px;
+  font-family: monospace;
+  }
+}
+  
+
 
 @media only screen and (max-width: 768px) {
   header {
