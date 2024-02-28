@@ -371,7 +371,7 @@ li a:hover::after {
 
 footer {
   padding: 2em;
-  background-image: url(icons/Portfolio\ Background\ Img.png);
+  background: url(https://raw.githubusercontent.com/Arman-Markaryan/Portfolio-Img-Hosting/main/icons/Landing-Page%20Background%20Img.png);
 }
 
 .Contact-Styling {
@@ -497,12 +497,10 @@ input {
 @media screen and (min-width: 320px) and (max-width: 425px) {
   .MN,
   .FED {
-  font-size: 45px;
-  font-family: monospace;
+    font-size: 45px;
+    font-family: monospace;
   }
 }
-  
-
 
 @media only screen and (max-width: 768px) {
   header {
