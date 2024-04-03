@@ -1,5 +1,5 @@
 |---------------------------------------------------------------------------------------------------------|
-|  Hey There, this will be a short introduction to what you're going to expect from my portfolio.         |
+|  Hey There, this will be a short introduction to what you expect from my portfolio.                     | 
 |---------------------------------------------------------------------------------------------------------|
 |  Expectation(s) below.                                                                                  |
 |                                                                                                         |
@@ -16,5 +16,6 @@
 |                                                                                                         |                                                             
 |---------------------------------------------------------------------------------------------------------|
 
+(All my work is very starter work so it might not be as impressive but it'll still depict what I'm capable of and am interested in.)
 
 (Side Note: When viewing the "read me", click on "code" not preview - It won't look cool in preview mode).
